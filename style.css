@@ -130,7 +130,9 @@ input:-internal-autofill-selected {
   position: relative; }
   .introArticle .btn_scroll {
     position: absolute;
-    bottom: 100px; }
+    transform: translateX(-50%);
+    bottom: 100px;
+    left: 50%; }
   .introArticle .ic_scroll_down span {
     width: 20px;
     height: 20px;
