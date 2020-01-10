@@ -126,14 +126,14 @@ input:-internal-autofill-selected {
  html,head,footer,section,article{min-width: 1200px;}
 
 
-.introArticle {
+.introArticle section {
   position: relative; }
-  .introArticle .btn_scroll {
+  .introArticle section .btn_scroll {
     position: absolute;
     transform: translateX(-50%);
     bottom: 100px;
     left: 50%; }
-  .introArticle .ic_scroll_down span {
+  .introArticle section .ic_scroll_down span {
     width: 20px;
     height: 20px;
     display: block;
@@ -143,9 +143,9 @@ input:-internal-autofill-selected {
     margin: -10px;
     animation: scrollDown 2s infinite;
     -webkit-animation: scrollDown 2s infinite; }
-  .introArticle .ic_scroll_down span:nth-child(2) {
+  .introArticle section .ic_scroll_down span:nth-child(2) {
     animation-delay: -0.2s; }
-  .introArticle .ic_scroll_down span:nth-child(3) {
+  .introArticle section .ic_scroll_down span:nth-child(3) {
     animation-delay: -0.4s; }
 
 @keyframes scrollDown {
