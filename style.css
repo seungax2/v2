@@ -130,11 +130,7 @@ input:-internal-autofill-selected {
   position: relative; }
   .introArticle .btn_scroll {
     position: absolute;
-    bottom: 0;
-    bottom: 25px;
-    animation: scrollDown 2s linear alternate infinite;
-    animation-fill-mode: forwards;
-    -webkit-animation: scrollDown 2s linear alternate infinite; }
+    bottom: 55px; }
   .introArticle .ic_scroll_down span {
     width: 20px;
     height: 20px;
