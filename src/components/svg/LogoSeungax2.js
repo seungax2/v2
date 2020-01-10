@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 
-class Logo3 extends Component {
+class LogoSeungax2 extends Component {
 	pathAnimationStart(el){
 		let svg_length = el.getTotalLength();
 		el.setAttribute("stroke-dasharray",svg_length + " " + svg_length);
@@ -169,5 +169,5 @@ class Logo3 extends Component {
 	}
 }
 
-export default Logo3;
+export default LogoSeungax2;
 

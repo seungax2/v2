@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
+import Logo3 from '../components/svg/LogoSeungax2'
+import Logo4 from '../components/svg/LogoSeungax2V2'
 
-import Logo from '../components/Logo'
-import Logo2 from '../components/Logo2'
-import Logo3 from '../components/Logo3'
 
 class Intro extends Component {
 	state = { height: 0 }
@@ -29,11 +28,21 @@ class Intro extends Component {
 		};
 		return (
 			<article className="introArticle">
+
 				<section className="flexColumn center" style={style}>
-					<div>
-						<Logo3 />
+					<Logo3 />
+					<Logo4 />
+					<div className="btn_scroll flexColumn center">
+						<a href="#demo">
+							<div className="ic_scroll_down">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</a>
 					</div>
 				</section>
+
 			</article >
 		);
 	}

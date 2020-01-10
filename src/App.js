@@ -10,7 +10,7 @@ class App extends Component {
 			<Router>
 				<section>
 					<Switch>
-						<Route exact path="/" component={Intro} />
+						<Route exact path="/v2/" component={Intro} />
 					</Switch>
 				</section>
 			</Router>
