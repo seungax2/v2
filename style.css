@@ -126,3 +126,10 @@ input:-internal-autofill-selected {
  html,head,footer,section,article{min-width: 1200px;}
 
 
+.introArticle {
+  position: relative; }
+  .introArticle .btn_scroll {
+    position: absolute;
+    bottom: 0;
+    bottom: 25px; }
+
