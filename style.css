@@ -157,3 +157,11 @@ input:-internal-autofill-selected {
   100% {
     opacity: 0; } }
 
+.startPathAni {
+  animation: dash 2s linear alternate 1;
+  animation-fill-mode: forwards; }
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0; } }
+
