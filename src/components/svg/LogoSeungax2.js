@@ -30,12 +30,12 @@ class LogoSeungax2 extends Component {
 
 						.twinkAni {
 							animation: twink 5s linear alternate infinite;
-							animation-delay : 0.5s
+							animation-delay : 0.5s;
 							animation-fill-mode: forwards;
 						}
 						.twinkAni2 {
 							animation: twink2 3s linear alternate infinite;
-							animation-delay : 0s
+							animation-delay : 0s;
 							animation-fill-mode: forwards;
 						}
 						

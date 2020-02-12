@@ -11,6 +11,7 @@ class App extends Component {
 				<section>
 					<Switch>
 						<Route exact path="/v2/" component={Intro} />
+						{/* <Route exact path="/" component={Intro} /> */}
 					</Switch>
 				</section>
 			</Router>

@@ -17,29 +17,18 @@ class LogoSeungax2 extends Component {
 			preserveAspectRatio="xMidYMid meet">
 				<style>
 					{ `
-						.startPathAni {
-							animation: dash 2s linear alternate 1;
+						.twinkAniV2 {
+							animation: twinkV2 5s linear alternate infinite;
+							animation-delay : 7s;
+							animation-fill-mode: forwards;
+						}
+						.twinkAni2V2 {
+							animation: twink2V2 3s linear alternate infinite;
+							animation-delay : 8s;
 							animation-fill-mode: forwards;
 						}
 						
-						@keyframes dash {
-							to {
-								stroke-dashoffset: 0;
-							}
-						}
-
-						.twinkAni {
-							animation: twink 5s linear alternate infinite;
-							animation-delay : 7s
-							animation-fill-mode: forwards;
-						}
-						.twinkAni2 {
-							animation: twink2 3s linear alternate infinite;
-							animation-delay : 8s
-							animation-fill-mode: forwards;
-						}
-						
-						@keyframes twink {
+						@keyframes twinkV2 {
 							0%{
 								opacity : 1;
 							}
@@ -66,7 +55,7 @@ class LogoSeungax2 extends Component {
 							}
 						}
 
-						@keyframes twink2 {
+						@keyframes twink2V2 {
 							0%{
 								opacity : 1;
 							}
@@ -142,7 +131,7 @@ class LogoSeungax2 extends Component {
 					105 0 105 0 0 55 0 55 -105 0 -105 0 0 175 0 175 130 0 130 0 0 55 0 55 -215
 					0 -215 0 0 -530z"/>
 					
-					<path className="u twinkAni" fill="url(#editing-gradient-gradient)" d="M1202 653 c4 -491 7 -506 82 -578 51 -50 99 -65 206 -65 98 0 147 13
+					<path className="u twinkAniV2" fill="url(#editing-gradient-gradient)" d="M1202 653 c4 -491 7 -506 82 -578 51 -50 99 -65 206 -65 98 0 147 13
 					193 51 85 70 97 149 97 638 l0 381 -80 0 -79 0 -3 -427 c-3 -428 -3 -428 -26
 					-465 -47 -76 -162 -74 -207 2 -19 34 -20 53 -23 463 l-3 427 -80 0 -80 0 3
 					-427z"/>
@@ -151,7 +140,7 @@ class LogoSeungax2 extends Component {
 					-3 0 531 0 530 -70 0 -70 0 -1 -327 -1 -328 -22 50 c-13 28 -76 175 -141 328
 					l-117 277 -59 0 -59 0 0 -530z"/>
 
-					<path className="a twinkAni2" fill="url(#editing-gradient-gradient)" d="M3475 1058 c-21 -91 -215 -1016 -215 -1025 0 -9 22 -13 75 -13 69 0
+					<path className="a twinkAni2V2" fill="url(#editing-gradient-gradient)" d="M3475 1058 c-21 -91 -215 -1016 -215 -1025 0 -9 22 -13 75 -13 69 0
 					75 2 80 23 6 30 45 237 45 243 0 2 45 4 100 4 113 0 99 12 120 -102 5 -32 15
 					-83 21 -113 l10 -55 78 0 77 0 -113 528 c-62 290 -113 528 -113 530 0 1 -36 2
 					-80 2 -74 0 -80 -1 -85 -22z m125 -443 c18 -93 34 -180 37 -192 5 -22 3 -23
