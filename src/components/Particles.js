@@ -1,24 +1,9 @@
 import React, { Component, useState } from "react";
-import { useSpring, animated } from "react-spring";
 import * as THREE from 'three';
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { GeometryUtils } from "three/examples/jsm/utils/GeometryUtils"
 
-
-function SpringDiv({ bgColor, children }) {
-	const [state, toggle] = useState(true)
-	const spring_props = useSpring({
-		from: { height: '15%', opacity: '0', position: 'absolute', width: '0px', },
-		to: { height: state ? '15%' : '80%', opacity: state ? '0' : '1', width: state ? '0px' : '1000px' },
-	})
-	return (
-		<div onClick={() => toggle(!state)} className="s2ClickDiv flexColumn center" data-color={bgColor} >
-			<p data-disabled="true">{children}</p>
-			<animated.div style={spring_props} className="popDiv"></animated.div>
-		</div>
-
-	)
-}
+import Tab from './IntroS2Tabs';
 
 class MakeParticles extends Component {
 
@@ -42,12 +27,10 @@ class MakeParticles extends Component {
 	drawScene() {
 		this.width = 1200;
 		this.height = this.mount.clientHeight;
-		console.log(this.width)
 
-		// this.triggers = this.mount.getElementsByTagName('span')
-		this.triggers = this.mount.getElementsByClassName('s2ClickDiv')
+		this.triggers = this.mount.getElementsByClassName('tabBtn')
 		//옵션
-		this.particleCount = 15000;
+		this.particleCount = 30000;
 		this.particleSize = .5;
 		this.defaultAnimationSpeed = 1
 		this.morphAnimationSpeed = 10
@@ -194,7 +177,7 @@ class MakeParticles extends Component {
 			speed: this.fullSpeed,
 			onComplete: this.slowDown.bind(this)
 		});
-		TweenMax.to(this.animationVars, 2, {
+		TweenMax.to(this.animationVars, 1, {
 			ease: Linear.easeNone,
 			color: color
 		});
@@ -214,16 +197,47 @@ class MakeParticles extends Component {
 	}
 
 	render() {
+		const tag = {
+			'hello': `
+				<p>
+					This is Jeon Seung A.<br>
+					And this page made with.. 
+				</p>
+				<div>
+					react.js <br>
+					webpack <br>
+					three.js <br>
+					svg animation <br>
+					css animation <br>
+					scss / css <br>
+				</div>
+			`,
+			'ability': `
+				<p>
+					Publishing / UI develop <br>
+					Javascript <br>
+					Front develop <br>
+					Web Animation <br>
+					Three.js <br>
+					React.js <br>
+				</p>
+			`,
+			'email': `
+				<p>seungax2@gmail.com</p>
+			`
+		}
+
 		return (
 			<div
 				className="threeWrap flex center"
 				style={{ width: '100%', height: '100%' }}
 				ref={(mount) => { this.mount = mount }}
 			>
+				{/* <p className="underSquare"></p> */}
 				<div className="contentsWrap flex center">
-					<SpringDiv bgColor={'#00cbff'} gradationColor={'#5ee7df', '#b490ca'}>HELLO</SpringDiv>
-					<SpringDiv bgColor={'#18b097'}>ABILITY</SpringDiv>
-					<SpringDiv bgColor={'#a278ff'}>E-MAIL</SpringDiv>
+					<Tab bgColor={'#caffe4'} blurColor={'#9ef2ff'} showData={tag['hello']}>HELLO</Tab>
+					<Tab bgColor={'#9effff'} blurColor={'#aeffce'} showData={tag['ability']}>ABILITY</Tab>
+					<Tab bgColor={'#fcd4ff'} blurColor={'#fcd4ff'} showData={tag['email']}>E-MAIL</Tab>
 				</div>
 			</div>
 		);

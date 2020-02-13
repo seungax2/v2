@@ -18,15 +18,18 @@ function Intro() {
 	let style = {
 		width: '100%',
 		height: height,
-		background: '#000'
+		background: '#709074'
 	};
 
 	return (
 		<article className="introArticle">
 
-			<section className="flexColumn center" style={{ ...style, ...{ background: '#000' } }} >
-				<Logo3 />
-				<Logo4 />
+			{/* <section className="flexColumn center" style={{ ...style, ...{ background: '#000' } }} > */}
+			<section id="intro_s1" className="flexColumn center" style={{ ...style }} >
+				<div className="logoWrapper flexColumn center">
+					<Logo3 />
+					<Logo4 />
+				</div>
 				<div className="btn_scroll flexColumn center">
 					<a href="#intro_s2">
 						<div className="ic_scroll_down">
