@@ -233,11 +233,11 @@ class MakeParticles extends Component {
 				style={{ width: '100%', height: '100%' }}
 				ref={(mount) => { this.mount = mount }}
 			>
-				{/* <p className="underSquare"></p> */}
+				<p className="underSquare"></p>
 				<div className="contentsWrap flex center">
 					<Tab bgColor={'#caffe4'} blurColor={'#9ef2ff'} showData={tag['hello']}>HELLO</Tab>
 					<Tab bgColor={'#9effff'} blurColor={'#aeffce'} showData={tag['ability']}>ABILITY</Tab>
-					<Tab bgColor={'#fcd4ff'} blurColor={'#fcd4ff'} showData={tag['email']}>E-MAIL</Tab>
+					<Tab bgColor={'#f2ff85'} blurColor={'#fcd4ff'} showData={tag['email']}>E-MAIL</Tab>
 				</div>
 			</div>
 		);

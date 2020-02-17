@@ -8,15 +8,22 @@ $cm_shadow_c : rgba(53, 66, 53, 0.78);
 		position: relative;
 		min-height: 640px;
 		.logoWrapper{
-			padding: 180px 180px;
+			width: 900px;
+			background: url(../img/circle2_b.png) no-repeat;
+			background-size: 100% auto;
+			height: 900px;
+			background-position: center;
+			/* padding: 180px 180px;
 			background: $cm_figure_c;
 			border-radius: 50%;
-			box-shadow: 9px 8px 7px 1px $cm_shadow_c;
+			background: url('../img/circle2_b.png');
+			box-shadow: 9px 8px 7px 1px $cm_shadow_c; */
 		}
 		.btn_scroll{
 			position: absolute;
 			transform: translateX(-50%);
-			bottom: 100px;
+			/* bottom: 100px; */
+			bottom: 270px;
 			left: 50%;
 		}
 	
@@ -69,12 +76,15 @@ $cm_shadow_c : rgba(53, 66, 53, 0.78);
 .threeWrap{
 	.underSquare{
 		position: absolute;
-		background: $cm_figure_c ;
-		box-shadow: 9px 8px 7px 1px $cm_shadow_c;
+		// background: $cm_figure_c ;
+		// box-shadow: 9px 8px 7px 1px $cm_shadow_c;
 		width: 1000px;
 		height: 40%;
 		z-index: 0;
 		top: 11.8%;
+		background: url(../img/leaf4.png) no-repeat;
+		background-position: center;
+		/* background-size: auto 100%; */
 	}
 	canvas{z-index: 1;}
 	.contentsWrap{
