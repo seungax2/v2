@@ -223,7 +223,7 @@ class MakeParticles extends Component {
 				</p>
 			`,
 			'email': `
-				<p>seungax2@gmail.com</p>
+				<p>-</p>
 			`
 		}
 
