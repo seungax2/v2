@@ -200,7 +200,7 @@ class MakeParticles extends Component {
 		const tag = {
 			'hello': `
 				<p>
-					This is Jeon Seung A.<br>
+					This is sa.<br>
 					And this page made with.. 
 				</p>
 				<div>
